@@ -51,7 +51,7 @@ const testTask = {
 
 function CreateTask (props) {
   return(
-    CheckboxTask (props.id, props.descr)
+    <CheckboxTask id={props.taskId} descr={props.taskDescr}/>
   )
 }
 
@@ -60,7 +60,7 @@ function CheckboxTask (props) {
   return (
     <div className='task'>
       <input type='checkbox' id={props.id}/>
-      <label for={props.task.id}>{props.taskDescr}</label>
+      <label for={props.taskId}>{props.taskDescr}</label>
     </div>
 
   )
