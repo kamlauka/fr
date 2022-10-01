@@ -25,18 +25,16 @@ function TodoPage (props) {
   <div>
     <h1>Todo list</h1>
     {form}
-    CreateTask(
+    <CreateTask
       id = {testTask.id}
-      descr = {testTask.description}
-    )
+      descr = {testTask.decr}
+    />
 
   </div>
 
 }
 
-root.render(
-  <TodoPage/>
-);
+
 
 const form = (
   <form>
@@ -68,4 +66,6 @@ function CheckboxTask (props) {
   )
 }
 
-root.render(form)
+root.render(
+  <TodoPage/>
+);
